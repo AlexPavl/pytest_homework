@@ -5,5 +5,5 @@ class TestCatalog():
     def test_basket_button(self, browser):
         print("\nstart test...")
         browser.get(link)
-        browser.find_element_by_css_selector('button.btn-add-to-basket')
+        assert browser.find_element_by_css_selector('button.btn-add-to-basket')
         print("\nend test...")
